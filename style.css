@@ -1,0 +1,362 @@
+*
+{
+    margin: 0;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
+    background-color: #1F2039;
+    color:#F9F8FF
+}
+
+a{
+    text-decoration: none;
+    color: #242424;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+em
+{
+    color: #b47cca;
+}
+
+h1{
+    font-size: 3.5em;
+    color: #A5B4FC;
+    font-family: "Montserrat", sans-serif;
+}
+
+p, li{
+    font-size: 1.1em;
+}
+
+nav, footer
+{
+    background-color: white;
+    padding : 20px 50px;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap:7em;
+}
+
+footer{
+    gap:2em;
+}
+
+.logo{margin-right: auto;}
+
+
+section
+{
+    padding : 80px;
+}
+
+.paragraphe_index
+{
+    display:flex;
+    flex-direction:row;
+    /*width: 50%;*/
+    max-width: 1000px;
+    margin:auto;
+    justify-content: center;
+}
+
+.paragraphe_index div
+{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.paragraphe_index p
+{
+    margin-bottom: 4em;
+}
+
+/*.paragraphe_index h1
+{
+    margin-bottom: 50px;
+}
+
+.paragraphe_index p
+{
+    margin-bottom: 60px;
+}*/
+
+.image_robbie
+{
+    margin-left: 300px;
+    padding: 20px;
+
+    border-right: 1px solid #8e86b5;
+    border-bottom: 1px solid #8e86b5;
+}
+
+.contact{
+    background: linear-gradient(90deg, #8E86B5, #ACAEED);
+    font-family: 'Manrope', sans-serif;
+    color : white;
+
+    border-radius: 50px;
+
+    padding: 20px 30px;
+
+    display: inline-block;
+}
+
+.contact:hover{
+    text-decoration: none;
+    background : linear-gradient(#696484, #8788BA);
+}
+
+.resume_competences
+{
+    border-right: 1px solid #8e86b5;
+    border-bottom: 1px solid #8e86b5;
+    padding : 50px;
+    margin-bottom: 50px;
+}
+
+.resume_competences h2
+{
+    margin-top: 30px;
+}
+
+.resume_competences ul
+{
+    margin-top: 30px;
+}
+
+.lien_icones:hover{
+    opacity: 0.5;
+}
+
+.a_propos_main
+{
+    width: 50%;
+    margin: auto;
+}
+
+.images_index
+{
+    padding : 80px;
+    background-color: white;
+}
+
+.images_index div
+{
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:15px;
+    margin-bottom: 15px;
+}
+
+.images_index h2
+{
+    color : #242424;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.images_index .contact
+{
+    margin-top: 50px;
+}
+
+.portfolio-section-photos
+{
+    background-color: white;
+}
+
+.portfolio-section-photos h2
+{
+    margin-top: 45px;
+    margin-bottom: 45px;
+    color: #242424;
+}
+
+.grid_paysages img,
+.grid_portraits img {
+  width: 100%;
+  height: 100%;
+  /* Même si vous ne connaissez pas cette propriété, vous en aurez besoin pour permettre aux images de respecter les dimensions de la grid CSS */
+  object-fit: cover;
+}
+
+.grid_paysages{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    gap:15px;
+}
+
+.grid_portraits{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    gap:15px;
+}
+
+.portfolio-section-photos h2
+{
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.lien-conteneur-photo {
+    position: relative;
+  }
+
+.photo_hover
+{
+    position: absolute;
+    right: 0;
+    left:0;
+    top:0;
+    bottom: 0;
+    z-index:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+.lien-conteneur-photo:hover .photo_hover {
+    display: flex;
+}
+
+.tableau_tarifs
+{
+    border-collapse: collapse;
+    margin: auto;
+}
+
+td, th
+{
+    border : 1px #8e86b5 solid;
+    padding: 70px;
+}
+
+th
+{
+    padding: 20px;
+}
+
+caption
+{
+    font-size: 1.5em;
+    margin-bottom: 60px;
+}
+
+.parlons_projet_titre
+{
+    text-align: center;
+    font-size:2.5em;
+    margin-bottom: 40px;
+}
+
+.form_column
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.nom_mail_form
+{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+
+.nom_mail_form input
+{
+    width: 250px;
+    height: 45px;
+    border-radius: 5px;
+
+    font-size: 1.2em;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    /*width: 40%;*/
+    max-width: 1000px;
+}
+
+textarea
+{
+    width: 530px;
+    height: 150px;
+    border-radius: 5px;
+
+    font-size: 1.3em;
+}
+
+label
+{
+    margin-bottom: 10px;
+}
+
+input[type='submit']
+{
+    background: linear-gradient(90deg, #8E86B5, #ACAEED);
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.2em;
+    color : white;
+
+    border-radius: 50px;
+    padding: 20px 30px;
+    display: inline-block;
+
+    width: 200px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+input[type='submit']:hover
+{
+    text-decoration: none;
+    background : linear-gradient(#696484, #8788BA);
+}
+
+
+@media screen and (max-width: 996px) 
+{
+    .paragraphe_index
+    {
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+    }
+
+    .paragraphe_index img
+    {
+        display: none;
+        border-style: hidden;
+    }
+
+    nav, footer
+    {
+        flex-direction: column;
+        gap:15px;
+    }
+
+    .images_index div
+    {
+        flex-direction: column;
+    }
+}
